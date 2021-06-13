@@ -173,5 +173,5 @@ https://translate.googleapis.com/translate_a/single?client=gtx&sl=zh_cn&tl=zh_tw
 ```
 
 ## Reference
-https://www.jianshu.com/p/29f95efaa88b
-https://www.796t.com/article.php?id=175636
+* https://www.jianshu.com/p/29f95efaa88b
+* https://www.796t.com/article.php?id=175636
