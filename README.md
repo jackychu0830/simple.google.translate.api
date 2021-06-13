@@ -2,10 +2,10 @@
 Very simple Google Translator API Java version. No need apply API code.
 And response is very simple JSON text. Easy to read and parse.
 
-##Build 
+## Build
 mvn package
 
-##Run (from jar file)
+## Run (from jar file)
 ```shell
 java -jar target/simple.google.translate.api-1.0-SNAPSHOT-jar-with-dependencies.jar
 ```
@@ -131,22 +131,22 @@ SimpleGoogleTranslate translate = new SimpleGoogleTranslate();
 String result = translate.doTranslate(Language.auto, Language.zh_tw, "Hello, World!"));
 ```
 
-#How does this api work?
-###URL:
+# How does this api work?
+### URL:
 https://translate.googleapis.com/translate_a/single
 
-###Parameters:
+### Parameters:
 * client=gtx (don't change)
 * dt=t (don't change)
 * sl=zh_cn (Source language, for example zh-CN for Chinese Simplified)
 * tl=zh_tw (Target language, for example zh-TW for Chinese Traditional)
 * q=(query text. What you want to translate. URL encoded)
 
-###Example:
+### Example:
 
 https://translate.googleapis.com/translate_a/single?client=gtx&sl=zh_cn&tl=zh_tw&&dt=t&q=记得按下订阅按钮
 
-###Response (JSON format):
+### Response (JSON format):
 ```json
 [
 [
