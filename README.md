@@ -7,7 +7,7 @@ mvn package
 
 ## Run (from jar file)
 ```shell
-java -jar target/simple.google.translate.api-1.0-SNAPSHOT-jar-with-dependencies.jar
+java -jar target/simple.google.translate.api-1.0-jar-with-dependencies.jar
 ```
 ### Result Example
 ```
@@ -125,7 +125,7 @@ Result:
 
 ## Use API
 ```
-import com.jackychu.api.simplegoogletranslate.SimpleGoogleTranslate;
+import SimpleGoogleTranslate;
 
 SimpleGoogleTranslate translate = new SimpleGoogleTranslate();        
 String result = translate.doTranslate(Language.auto, Language.zh_tw, "Hello, World!"));

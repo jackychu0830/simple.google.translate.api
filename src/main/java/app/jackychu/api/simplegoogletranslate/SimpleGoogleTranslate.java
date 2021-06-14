@@ -1,4 +1,4 @@
-package com.jackychu.api.simplegoogletranslate;
+package app.jackychu.api.simplegoogletranslate;
 
 import lombok.Data;
 import org.json.simple.JSONArray;

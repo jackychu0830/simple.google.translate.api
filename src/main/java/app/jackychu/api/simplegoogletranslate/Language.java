@@ -1,4 +1,4 @@
-package com.jackychu.api.simplegoogletranslate;
+package app.jackychu.api.simplegoogletranslate;
 
 /**
  * Google Translate API supports languages

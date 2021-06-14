@@ -1,4 +1,4 @@
-package com.jackychu.api.simplegoogletranslate;
+package app.jackychu.api.simplegoogletranslate;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
