@@ -3,11 +3,11 @@ Very simple Google Translator API Java version. No need apply API code.
 And response is very simple JSON text. Easy to read and parse.
 
 ## Build
-mvn package
+mvn clean package
 
 ## Run (from jar file)
 ```shell
-java -jar target/simple.google.translate.api-1.0-jar-with-dependencies.jar
+java -jar target/simple.google.translate.api-1.0.0-jar-with-dependencies.jar
 ```
 ### Result Example
 ```
@@ -124,6 +124,17 @@ Result:
 ```
 
 ## Use API
+### Maven Dependency
+```xml
+<dependency>
+  <groupId>app.jackychu</groupId>
+  <artifactId>simple.google.translate.api</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
+
+Others please see: https://search.maven.org/artifact/app.jackychu/simple.google.translate.api/1.0.0/jar
+### Coding
 ```
 import SimpleGoogleTranslate;
 
