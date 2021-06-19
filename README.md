@@ -1,4 +1,5 @@
 # Simple Google Translate API
+## <b><i>!!! WARNING !!! <br/>This API only works for few translations in a short peorid. Otherwise, Google will ban your IP address!</i></b>
 Very simple Google Translator API Java version. No need apply API code.
 And response is very simple JSON text. Easy to read and parse.
 
