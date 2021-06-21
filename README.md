@@ -1,16 +1,20 @@
 # Simple Google Translate API
-## <b><i>!!! WARNING !!! <br/>This API only works for few translations in a short peorid. Otherwise, Google will ban your IP address!</i></b>
-Very simple Google Translator API Java version. No need apply API code.
-And response is very simple JSON text. Easy to read and parse.
+
+Very simple Google Translator API Java version. No need apply API code. And response is very simple JSON text. Easy to
+read and parse.
 
 ## Build
-mvn clean package
+
+mvn clean package -P standalone
 
 ## Run (from jar file)
+
 ```shell
-java -jar target/simple.google.translate.api-1.0.0-jar-with-dependencies.jar
+java -jar target/simple.google.translate.api-1.1.0-jar-with-dependencies.jar
 ```
+
 ### Result Example
+
 ```
 Please type the text which you want to translate: Hello, World!
 1: Afrikaans (af)
@@ -125,17 +129,21 @@ Result:
 ```
 
 ## Use API
+
 ### Maven Dependency
+
 ```xml
 <dependency>
   <groupId>app.jackychu</groupId>
   <artifactId>simple.google.translate.api</artifactId>
-  <version>1.0.0</version>
+  <version>1.1.0</version>
 </dependency>
 ```
 
 Others please see: https://search.maven.org/artifact/app.jackychu/simple.google.translate.api/1.0.0/jar
+
 ### Coding
+
 ```
 import SimpleGoogleTranslate;
 
@@ -143,47 +151,12 @@ SimpleGoogleTranslate translate = new SimpleGoogleTranslate();
 String result = translate.doTranslate(Language.auto, Language.zh_tw, "Hello, World!"));
 ```
 
-# How does this api work?
-### URL:
-https://translate.googleapis.com/translate_a/single
-
-### Parameters:
-* client=gtx (don't change)
-* dt=t (don't change)
-* sl=zh_cn (Source language, for example zh-CN for Chinese Simplified)
-* tl=zh_tw (Target language, for example zh-TW for Chinese Traditional)
-* q=(query text. What you want to translate. URL encoded)
-
-### Example:
-
-https://translate.googleapis.com/translate_a/single?client=gtx&sl=zh_cn&tl=zh_tw&&dt=t&q=记得按下订阅按钮
-
-### Response (JSON format):
-```json
-[
-[
-[[
-  [
-    [
-      "記得按下訂閱按鈕",
-      "记得按下订阅按钮",
-      null,
-      null,
-      0
-    ]
-  ],
-  null,
-  "zh-CN",
-  null,
-  null,
-  null,
-  null,
-  []
-]]
-]
-]
+#### Enable logger
+```
+translate.enableLogger(Level.INFO); //Default is Level.WARNING
 ```
 
 ## Reference
+
 * https://www.jianshu.com/p/29f95efaa88b
 * https://www.796t.com/article.php?id=175636
